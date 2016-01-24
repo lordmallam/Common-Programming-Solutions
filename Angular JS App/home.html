@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="eHealthApp">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="pouchdb-5.2.0.min.js"></script>
+    <script src="angular-pouchdb.js"></script>
+    <script src="app.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+   <div class="container">
+        <h1>ANGULAR JS - POUCHDB</h1>
+    <div ng-controller="maincontroller" class="form-horizontal">
+        <div class="form-group"><label>Name: </label><input ng-model="name" type="text" class="form-control"/></div>
+        <div class="form-group">Surname: <input ng-model="surname" type="text" class="form-control"/></div><br />
+        <div class="form-group">Age: <input ng-model="age" type="text" class="form-control"/></div><br />
+        <div class="form-group">Occupation: <input ng-model="occupation" type="text" class="form-control"/></div><br />
+        <div class="form-group">Hobbies: <input ng-model="hobbies" type="text" class="form-control"/></div><br />
+        <input class="btn btn-default" type="button" value="Add to PouchDB" ng-click="Calladdtodb(name,surname,age,occupation,hobbies);">
+    </div>
+   </div>
+</body>
+</html>
