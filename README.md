@@ -1,1 +1,1 @@
-# eHealth-Africa-Programming-Test-
+# Common Programming Solutions
